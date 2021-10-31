@@ -3,12 +3,20 @@ var router = express.Router();
 var mysql=require('mysql');
 const URL=require('url');
 var connection = mysql.createConnection({
-    host     : '192.168.0.127',
-    port:'3306',
+    host     : 'localhost',
+    port     : '3306',
     user     : 'root',
-    password : 'LongBang***',
+    password : 'admin',
     database : 'storagedb',
-    multipleStatements: true
+    multipleStatements: true,
+    connectTimeout:false
+
+    // host     : '192.168.0.127',
+    // port:'3306',
+    // user     : 'root',
+    // password : 'LongBang***',
+    // database : 'storagedb',
+    // multipleStatements: true
 });
 
 

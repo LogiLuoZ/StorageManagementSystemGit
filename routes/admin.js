@@ -6,13 +6,19 @@ var pinyin = require("pinyin");
 const URL=require('url');
 var multer = require('multer');
 var connection = mysql.createConnection({
-    host     : '192.168.0.127',
+    host     : 'localhost',
     port:'3306',
     user     : 'root',
-    password : 'LongBang***',
+    password : 'admin',
     database : 'storagedb',
     multipleStatements: true,
     connectTimeout:false
+
+    // host     : '192.168.0.127',
+    // port:'3306',
+    // user     : 'root',
+    // password : 'LongBang***',
+    // database : 'storagedb',
 });
 
 
